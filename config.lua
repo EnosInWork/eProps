@@ -5,24 +5,24 @@ Config.Global = {
     Framework = "esx", -- esx = trigger / newEsx = export for legacy new version
     SharedObject = "esx:getSharedObject",
     -----------------------------------------------------------------------------------
-    ColorMenuR = 255, -- Bannière couleur R
-    ColorMenuG = 255, -- Bannière couleur G
-    ColorMenuB = 255, -- Bannière couleur B
-    ColorMenuA = 150, -- Bannière couleur A
-    MenuPositionX = 0, -- Bannière position X sur l'écran
-    MenuPositionY = 0, -- Bannière position Y sur l'écran
-    TextColor = "~y~", -- Couleur du texte menu 
+    ColorMenuR = 255, -- Bannière couleur R / Marker de suppression 
+    ColorMenuG = 255, -- Bannière couleur G / Marker de suppression 
+    ColorMenuB = 255, -- Bannière couleur B / Marker de suppression 
+    ColorMenuA = 150, -- Bannière couleur A / Marker de suppression 
+    TextColor = "~y~", -- Couleur du texte pour tout le menu 
     -----------------------------------------------------------------------------------
-    PropsMax = 5,
+    PropsMax = 5, -- Props posable au maximum 
 }
 
 Config.Props = {
 
     {
-        name = "Général",
-        job = nil,
-        job2 = nil,
+        name = "Général", -- Nom de la catégorie 
+        job = nil, -- job qui vois cette catégorie (nil = tout le monde)
+        job2 = nil, -- job2 qui vois cette catégorie (nil = tout le monde)
         Props = {
+            -- Label = Nom dans le menu 
+            -- Model = https://forge.plebmasters.de/objects
             {Label = "Fauteil Roulant", Model = "prop_wheelchair_01"},
             {Label = "Chaise Camping", Model = "prop_skid_chair_01"},
             {Label = "Chaise de rue", Model = "v_ilev_chair02_ped"},
